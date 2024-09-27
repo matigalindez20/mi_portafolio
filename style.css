@@ -148,12 +148,125 @@ li a{
 
 }
 
+.presentacion{
+    color: #acacc7;
+    margin: 20vh;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+}
+
+.opor{
+    color: #acacc7;
+    margin: 20vh;
+    margin-top: -15vh;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+}
+
+#estudios{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+#estudios h1{
+    color: #acacc7;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 600px; /* Ancho máximo de la línea del tiempo */
+    margin: 50px auto; /* Centrado horizontal */
+    padding: 20px;
+    background: #000(75, 55, 55, 0.116);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    position: relative;
+    margin: 20px 0; /* Espaciado entre eventos */
+    padding-left: 50px; /* Espacio para la línea */
+}
+
+.event-date {
+    position: absolute;
+    left: -40px; /* Alineación de la fecha a la izquierda */
+    top: 0;
+    background: #004c78; /* Color de fondo para la fecha */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.eventos{
+    color: #acacc7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.event-content {
+    background: #004c78; /* Color de fondo para el contenido */
+    padding: 10px;
+    color: #acacc7;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Alineación de la línea */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Grosor de la línea */
+    background: #004c78; /* Color de la línea */
+}
+
+
+/* Animación de pulsar */
+.current-event .event-date {
+    animation: pulse 1s infinite; /* Animación pulsante */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background: #007bff; /* Color original */
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta el tamaño */
+        background: #0056b3; /* Color más oscuro */
+    }
+    100% {
+        transform: scale(1);
+        background: #007bff; /* Regresa al color original */
+    }
+}
+/* Animación de rebote */
+
+
 .icon{
     animation: bounce 1s infinite; /* Aplica la animación */
 }
 
 
-/* Animación de rebote */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -164,4 +277,91 @@ li a{
     60% {
         transform: translateY(-5px); /* Desciende un poco */
     }
+}
+
+.proyectos{
+    
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+}
+
+#proyectos h1{
+    color: #acacc7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2rem; /* Tamaño del texto */
+}
+
+.titulos p{
+    color: #acacc7;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+}
+
+.titulos h2{
+    color: #acacc7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 3%;
+    margin-left: 15vh;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 88%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #acacc7; /* Fondo blanco para la tarjeta */
+    border: #acacc7 solid;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Oculta el desbordamiento */
+    width: calc(30.33% - 10px); /* Ancho de cada tarjeta con margen */
+    margin: 25px; /* Margen alrededor de cada tarjeta */
+}
+
+.card img {
+    width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.card h2 {
+    margin: 16px 0; /* Margen para el título */
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card p {
+    margin: 0 16px 16px; /* Margen para el párrafo */
+    color: #666; /* Color del texto del párrafo */
+    font-size: 1rem; /* Tamaño del texto del párrafo */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
