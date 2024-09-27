@@ -365,3 +365,54 @@ li a{
     font-weight: 500;
     font-style: normal;
 }
+
+.proyectos h1{
+    font-size: 100px;
+    color: #acacc7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.icon-container {
+    display: flex; /* Usar flexbox */
+    justify-content: space-around; /* Espacio uniforme entre íconos */
+    flex-wrap: wrap; /* Permite que los íconos se ajusten en varias líneas */
+}
+
+.icons {
+    flex: 1; /* Hace que cada ícono ocupe espacio igual */
+    max-width: 100px; /* Ancho máximo del ícono */
+    margin: 10px; /* Margen alrededor de cada ícono */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del ícono */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 20px; /* Espaciado interno */
+    color: #acacc7;
+    font-size: 65px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    animation: bounce 1s infinite; /* Aplica la animación */
+}
+
+.tools-iconos{
+    display: flex; /* Usar flexbox */
+    justify-content: space-around; /* Espacio uniforme entre íconos */
+    flex-wrap: wrap; /* Permite que los íconos se ajusten en varias líneas */
+}
+
+.git {
+    flex: 1; /* Hace que cada ícono ocupe espacio igual */
+    max-width: 100px; /* Ancho máximo del ícono */
+    margin: 10px; /* Margen alrededor de cada ícono */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del ícono */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 20px; /* Espaciado interno */
+    color: #acacc7;
+    font-size: 65px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    animation: bounce 1s infinite; /* Aplica la animación */
+}
+
